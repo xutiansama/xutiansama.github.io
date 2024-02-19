@@ -16,24 +16,22 @@
   <meta name="author" content="Xutiansama">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Hexo框架与Fluid主题">
+    <meta name="description" content="电影电视剧的评分以及简短评价">
 <meta property="og:type" content="article">
-<meta property="og:title" content="个人博客搭建">
-<meta property="og:url" content="https://xutiansama.gitee.io/personal-blog/2021/02/19/ge-ren-bo-ke-da-jian/index.html">
+<meta property="og:title" content="电影电视剧评分">
+<meta property="og:url" content="https://xutiansama.gitee.io/personal-blog/2022/05/12/sheng-huo/dian-ying-dian-shi-ju-ping-fen/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Hexo框架与Fluid主题">
+<meta property="og:description" content="电影电视剧的评分以及简短评价">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://typora-oss-imgbed.oss-cn-beijing.aliyuncs.com/%E5%9B%BE%E7%89%87/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/%E9%85%8D%E7%BD%AE%E5%8D%9A%E5%AE%A2%E6%8E%A8%E9%80%81%E5%9C%B0%E5%9D%80.png">
-<meta property="article:published_time" content="2021-02-19T02:00:00.000Z">
-<meta property="article:modified_time" content="2024-02-19T09:34:02.970Z">
+<meta property="article:published_time" content="2022-05-12T02:00:00.000Z">
+<meta property="article:modified_time" content="2024-02-19T09:40:30.455Z">
 <meta property="article:author" content="Xutiansama">
-<meta property="article:tag" content="Blog">
+<meta property="article:tag" content="吃喝玩乐">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://typora-oss-imgbed.oss-cn-beijing.aliyuncs.com/%E5%9B%BE%E7%89%87/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/%E9%85%8D%E7%BD%AE%E5%8D%9A%E5%AE%A2%E6%8E%A8%E9%80%81%E5%9C%B0%E5%9D%80.png">
   
   
   
-  <title>个人博客搭建 - Hexo</title>
+  <title>电影电视剧评分 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -199,7 +197,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="个人博客搭建"></span>
+            <span id="subtitle" data-typed-text="电影电视剧评分"></span>
           
         </div>
 
@@ -210,8 +208,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2021-02-19 10:00" pubdate>
-          2021年2月19日 上午
+        <time datetime="2022-05-12 10:00" pubdate>
+          2022年5月12日 上午
         </time>
       </span>
     
@@ -222,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          293 字
+          310 字
         
       </span>
     
@@ -270,56 +268,42 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">个人博客搭建</h1>
+            <h1 id="seo-header">电影电视剧评分</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="1-部署"><a href="#1-部署" class="headerlink" title="1.部署"></a>1.部署</h2><ol>
-<li>下载Node.js</li>
-</ol>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs crmsh"><span class="hljs-keyword">node</span> <span class="hljs-title">-v</span>	<span class="hljs-comment">#查看node版本</span><br>npm -v	<span class="hljs-comment">#查看npm版本</span><br></code></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>安装hexo框架</li>
-</ol>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs xml">npm install -g cnpm --registry=http://registry.npm.taobao.org	#安装淘宝的cnpm 管理器<br>cnpm -v	#查看cnpm版本<br><br>cnpm install -g hexo-cli    #安装hexo框架<br>hexo -v	#查看hexo版本<br><br>#下载git, 在新建文件夹gitbash<br>hexo init 	#生成博客 初始化博客<br><br>hexo s		#启动本地博客服务<br>http://localhost:4000/	#本地访问地址<br><br>hexo n &quot;我的第一篇文章&quot; 	#创建新的文章 <br>hexo clean 	#清理<br>hexo g 	#生成<br></code></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>Gitee创建仓库</li>
-</ol>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs stylus">新建仓库--&gt;服务--&gt;Gitee pages<br><br>git config <span class="hljs-attr">--global</span> user<span class="hljs-selector-class">.name</span> <span class="hljs-string">&quot;用户名&quot;</span><br>git config <span class="hljs-attr">--global</span> user<span class="hljs-selector-class">.email</span> <span class="hljs-string">&quot;用户邮箱&quot;</span><br><br>ssh-keygen -t rsa -C <span class="hljs-string">&quot;1185802533@qq.com&quot;</span> #生成密钥<br>user/.ssh/id_rsa<span class="hljs-selector-class">.pub</span> 粘贴到 gitee/ssh公钥<br></code></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>修改配置</li>
-</ol>
-<p><img src="https://typora-oss-imgbed.oss-cn-beijing.aliyuncs.com/%E5%9B%BE%E7%89%87/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/%E9%85%8D%E7%BD%AE%E5%8D%9A%E5%AE%A2%E6%8E%A8%E9%80%81%E5%9C%B0%E5%9D%80.png" srcset="/personal-blog/img/loading.gif" lazyload></p>
-<ol start="5">
-<li>部署</li>
-</ol>
-<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs 1c">npm install hexo-deployer-git --save <span class="hljs-meta">#在blog目录下安装git部署插件</span><br><br>hexo cl <span class="hljs-meta">#清理缓存</span><br>hexo g<br>hexo d <span class="hljs-meta">#推送到码云</span><br><br>hexo cl <span class="hljs-meta">&amp;&amp; hexo g &amp;&amp; hexo s</span><br></code></pre></td></tr></table></figure>
-
-<h2 id="2-主题"><a href="#2-主题" class="headerlink" title="2.主题"></a>2.主题</h2><ol>
-<li>下载主题</li>
-</ol>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">git <span class="hljs-keyword">clone</span> <span class="hljs-title">git</span>@github.com:fluid-dev/hexo-theme-fluid.git<br></code></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>修改配置</li>
-</ol>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs xml">/source/_data自定义配置文件fluid_config.yml<br></code></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>个性化</li>
-</ol>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">https:<span class="hljs-regexp">//</span>hexo.fluid-dev.com<span class="hljs-regexp">/docs/</span>start/<br></code></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>推送</li>
-</ol>
-<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs 1c">hexo clean <span class="hljs-meta">&amp; hexo g	<span class="hljs-comment">//清理</span></span><br>hexo s				<span class="hljs-comment">//本地</span><br>hexo d				<span class="hljs-comment">//推送</span><br><br>hexo clean <span class="hljs-meta">&amp; hexo g &amp; hexo s</span><br>hexo clean <span class="hljs-meta">&amp; hexo g &amp; hexo d</span><br><br>git add .<br>git commit -m <span class="hljs-string">&quot;Hexo源码提交&quot;</span><br>git push origin blogSourceCode<br></code></pre></td></tr></table></figure>
-
-<h2 id="3-个性化"><a href="#3-个性化" class="headerlink" title="3.个性化"></a>3.个性化</h2><p>​    根据主题用户手册, 进行个性化</p>
+                <h1 id="电影"><a href="#电影" class="headerlink" title="电影"></a>电影</h1><h2 id="海边的曼彻斯特"><a href="#海边的曼彻斯特" class="headerlink" title="海边的曼彻斯特"></a>海边的曼彻斯特</h2><ul>
+<li><p><code>90.2</code></p>
+</li>
+<li><p>没有反转，最真实的表达，离开才是最好的生活</p>
+</li>
+</ul>
+<h2 id="天气预报员"><a href="#天气预报员" class="headerlink" title="天气预报员"></a>天气预报员</h2><ul>
+<li>努力不一定成功，接受平庸</li>
+</ul>
+<h2 id="无人生还"><a href="#无人生还" class="headerlink" title="无人生还"></a>无人生还</h2><ul>
+<li>窒息感,欲扬先抑铺垫两小时在最后迎来高潮</li>
+<li>多处细节暗示凶手,情理之中意料之外</li>
+</ul>
+<h2 id="让子弹飞"><a href="#让子弹飞" class="headerlink" title="让子弹飞"></a>让子弹飞</h2><ul>
+<li>每个人都能解读为为自己发声</li>
+</ul>
+<h2 id="疯狂的石头"><a href="#疯狂的石头" class="headerlink" title="疯狂的石头"></a>疯狂的石头</h2><ul>
+<li>本土版两杆大烟枪</li>
+<li>喜剧内核悲剧,以诙谐的方式刻画了市井百态</li>
+</ul>
+<h1 id="电视剧"><a href="#电视剧" class="headerlink" title="电视剧"></a>电视剧</h1><h2 id="卿卿日常"><a href="#卿卿日常" class="headerlink" title="卿卿日常"></a>卿卿日常</h2><p><code>概括</code></p>
+<ul>
+<li>给女性观众展示其向往的乌托邦世界,女性互帮互助,男主宠溺女主独立,轻喜剧圆满结局</li>
+</ul>
+<p><code>展开</code></p>
+<ul>
+<li>女性互助固然提倡,但现代思想套入古代躯壳不免显得水土不服、造成逻辑不通</li>
+<li>男主对女主无限包容,不像人更像幻化的神</li>
+<li>女主既要像姐姐一样独立,又要像妹妹一样被宠溺,既要又要尺寸把握不准,未做好平衡造成前后矛盾</li>
+<li>轻喜剧元素下隐藏的父权威严,看似宣传女权实则只是笼中之鸟,困在父权插翅难飞</li>
+</ul>
 
                 
               </div>
@@ -338,7 +322,7 @@
     
       <span class="category-chain">
         
-  <a href="/personal-blog/categories/Other/" class="category-chain-item">Other</a>
+  <a href="/personal-blog/categories/Movie/" class="category-chain-item">Movie</a>
   
   
 
@@ -353,7 +337,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/personal-blog/tags/Blog/" class="print-no-link">#Blog</a>
+        <a href="/personal-blog/tags/%E5%90%83%E5%96%9D%E7%8E%A9%E4%B9%90/" class="print-no-link">#吃喝玩乐</a>
       
     </div>
   
@@ -365,8 +349,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>个人博客搭建</div>
-      <div>https://xutiansama.gitee.io/personal-blog/2021/02/19/ge-ren-bo-ke-da-jian/</div>
+      <div>电影电视剧评分</div>
+      <div>https://xutiansama.gitee.io/personal-blog/2022/05/12/sheng-huo/dian-ying-dian-shi-ju-ping-fen/</div>
     </div>
     <div class="license-meta">
       
@@ -378,7 +362,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2021年2月19日</div>
+          <div>2022年5月12日</div>
         </div>
       
       
@@ -410,15 +394,21 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/personal-blog/2022/05/10/ruan-jian-tui-jian/" title="软件推荐">
+                      <a href="/personal-blog/2022/10/01/sheng-huo/2022-guo-qing-chu-you-ji-hua/" title="2022国庆出游计划">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">软件推荐</span>
+                        <span class="hidden-mobile">2022国庆出游计划</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/personal-blog/2022/05/10/ruan-jian/ruan-jian-tui-jian/" title="软件推荐">
+                        <span class="hidden-mobile">软件推荐</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
